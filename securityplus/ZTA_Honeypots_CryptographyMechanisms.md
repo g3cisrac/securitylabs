@@ -54,3 +54,72 @@ Performance overhead of continuous verification
 NIST SP 800-207 — the foundational ZT reference architecture
 CISA Zero Trust Maturity Model — traditional → initial → advanced → optimal, across the 5 pillars
 DoD Zero Trust Reference Architecture
+Trust/Zero Trust 
+ 
+* Microsegmentation
+    * isolating, containing, does not spill out into other apps or operating
+    * Environmental
+    * Application
+    * Process
+    * User Container
+    * Kubernetes 
+Application Segmentation
+* tries to limit the communications between applications
+
+
+PLP min level of access to perform their tasks, limiting security risks
+
+
+
+
+End-to-end encryption 
+* both in transit and at rest, ensuring the confidentiality and integrity
+
+Strong authentication
+* Supports trust management
+* Cryptography especially PKI is critical for strong authentication 
+
+	FIPS ? not really
+
+	NIST
+
+    * in charge of strong auth
+
+System Hygiene
+* unpatched and non-compliant systems are potential attack vectors
+* In zero trust networks, systems need to meet min baseline requirements
+
+Integrity checking by using checksums, etc
+
+Seven domains of IT Infrastructure
+
+* Typical IT Inf
+    * User
+    * Workstation
+    * LAN
+    * LAN2WAN
+    * WAN
+    * Remote Access
+    * System/App
+Deploying a ZTA
+
+* ident and categorize sensitive data
+* map data flow
+* create access policy
+* Deploy tools
+* Monitor and track access
+
+Analyze and Remediate Security Incidents
+
+* Deploy tools and processes that may detect/respond to security incidents
+* Remediate the incident and prevent it from happening again
+
+Zero trust potential vendor
+* are you NIST 800-207 compliant? 
+* How do you protect threats against
+    * human
+    * non human
+    * the identity store
+* do you implement a risk based policy approach for Zero Trust
+
+* 
