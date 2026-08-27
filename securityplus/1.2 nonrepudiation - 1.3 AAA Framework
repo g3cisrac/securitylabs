@@ -1,0 +1,32 @@
+The principle that someone cant deny any changes or tampering have occured. It's like signing a document, and the data is accurate and consistent. 
+
+A hash tells you if any data has changed. This all falls under the idea of integrity. a.k.a "proof of origin" 
+
+AAA Framework: 
+identification (username), authentication (who you say you are), authorization (what do you have?) Accounting: Resources Used. 
+"AAA servers approve credentials alongside firewall. 
+Companies have CAs for their laptops (authorisations). 
+Authorization models use "adding abstractions" to manage. 
+Common abstraction models:
+
+RBAC (Role-Based Access Control)
+Users are assigned to roles (e.g., "HR Manager," "Sysadmin")
+Roles are granted permissions, not users directly
+Change someone's job? Just swap their role; no need to touch individual permission entries
+Group-Based Access Control
+Users are placed into groups (e.g., "Finance Team")
+Permissions are assigned to the group
+Common in Active Directory / Windows environments
+ABAC (Attribute-Based Access Control)
+Access decisions are based on attributes (department, clearance level, time of day, device type)
+More granular and dynamic than RBAC — policies can say "allow if department=Finance AND time=business hours"
+Hierarchical / Inherited Permissions
+Higher-level roles or groups pass down (inherit) permissions to lower ones
+Reduces the need to redefine permissions at every level
+Why This Matters
+Scalability: adding a new employee means assigning a role, not writing custom rules
+Auditability: easier to answer "who can access X?" by checking roles/groups instead of thousands of individual grants
+Least privilege: roles can be scoped tightly, and users only get what their role needs
+Consistency: reduces human error from manually setting permissions one-by-one
+
+In short: abstraction means managing permissions at the level of roles, groups, or attributes rather than individual users — this is the foundation of enterprise IAM (Identity and Access Management) systems.
